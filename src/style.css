@@ -1,0 +1,122 @@
+/* =========================
+   レイアウト共通
+========================= */
+
+.people {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .people {
+    flex-direction: column;
+  }
+}
+
+/* =========================
+   カード共通
+========================= */
+
+.card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   収入入力行
+========================= */
+
+.income-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* =========================
+   ボタン類
+========================= */
+
+.remove-btn {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.remove-btn:hover {
+  background: #ddd;
+}
+
+.add-btn {
+  margin-top: 8px;
+  background: #e0e7ff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* =========================
+   合計表示
+========================= */
+
+.total {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+/* =========================
+   MoneyInput
+========================= */
+
+.money-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.money-input label {
+  width: 60px;
+  font-size: 14px;
+}
+
+.money-input input {
+  width: 80px;
+  padding: 4px 6px;
+}
+
+/* =========================
+   結果エリア
+========================= */
+
+.results-container {
+  margin-top: 24px;
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.results-container h2 {
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  color: #4f46e5;
+}
+
+.results {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.results .card {
+  min-width: 200px;
+}
