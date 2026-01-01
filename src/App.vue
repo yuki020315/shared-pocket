@@ -110,4 +110,5 @@ const sharedTotal = computed(() =>
   margin: auto;
   padding: 16px;
 }
+
 </style>
