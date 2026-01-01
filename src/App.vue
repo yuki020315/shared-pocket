@@ -73,14 +73,14 @@ const sharedTotal = computed(() =>
       </div>
 
       <div class="results-container">
-        <h2>各自の共有口座調整</h2>   <!-- タイトル -->
+        <h2>お小遣い</h2>   <!-- タイトル -->
         <div class="card">
           <MoneyInput label="お小遣い（1人分）" v-model="allowance" />
         </div>
       </div>
 
       <div class="results-container">
-        <h2>各自の共有口座調整</h2>   <!-- タイトル -->
+        <h2>収支</h2>   <!-- タイトル -->
         <div class="results">
           <MoneyResult name="Aさん" :value="resultA" />
           <MoneyResult name="Bさん" :value="resultB" />
