@@ -1,17 +1,15 @@
 <script setup>
 import { ref, computed } from 'vue'
 import AppHeader from './components/Header.vue'
-import Income from './components/Income.vue'
-import Result from './components/Result.vue'
-import Allowance from './components/Allowance.vue'
+import Income from './components/Income/Income.vue'
+import Result from './components/Result/Result.vue'
+import Allowance from './components/Allowance/Allowance.vue'
 
-// --- 状態を親で管理 ---
 const allowance = ref(0)
 const incomesA = ref([0])
 const incomesB = ref([0])
 const incomesShare = ref([0])
 
-// --- 計算 ---
 const totalA = computed(() => incomesA.value.reduce((sum, v) => sum + v, 0))
 const totalB = computed(() => incomesB.value.reduce((sum, v) => sum + v, 0))
 const totalSheare = computed(() => incomesShare.value.reduce((sum, v) => sum + v, 0))

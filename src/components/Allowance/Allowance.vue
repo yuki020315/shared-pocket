@@ -1,5 +1,5 @@
 <script setup>
-import MoneyInput from './MoneyInput.vue'
+import MoneyInput from '../Common/MoneyInput.vue'
 
 const props = defineProps({
   allowance: Number

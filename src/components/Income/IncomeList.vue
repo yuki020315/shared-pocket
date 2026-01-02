@@ -1,6 +1,6 @@
 <script setup>
 import { computed } from 'vue'
-import MoneyInput from './MoneyInput.vue'
+import MoneyInput from '../Common/MoneyInput.vue'
 
 const props = defineProps({
   incomes: Array,

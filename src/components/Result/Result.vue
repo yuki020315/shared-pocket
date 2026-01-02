@@ -1,7 +1,7 @@
 <script setup>
 
-import MoneyResult from './MoneyResult.vue'
-import MoneyResultShare from './MoneyResultShare.vue'
+import MoneyResult from '../Result/MoneyResult.vue'
+import MoneyResultShare from '../Result/MoneyResultShare.vue'
 
 
 const props = defineProps({
